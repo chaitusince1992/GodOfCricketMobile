@@ -1,0 +1,111 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    position: relative;
+}
+body* {
+    font-family: cursive;
+}
+.question-app-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    left: 0;
+    height: 100%;
+}
+.application-header {
+    color: white;
+    background: #4481a7;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 20px 20px;
+    font-weight: bold;
+    box-shadow: 0px 1px 10px grey;
+}
+img.backbutton-icon {
+    float: left;
+    width: 25px;
+    display: inline-block;
+    vertical-align: top;
+}
+.page-heading {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 5px;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+.application-detail {
+    position: absolute;
+    top: 73px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background: #FFFFFF;
+    text-align: center;
+}
+.sachin-image {
+    width: 100%;
+    height: 100%;
+    /*    position: relative;*/
+    background-color: #dedede;
+    background-image: url(../img/handing-1080p-wallpaper_3_1680x1050.jpg);
+    background-size: 100%;
+}
+.sachin-image img {
+    width: 100%;
+}
+.welcome-text-app {
+    font-size: 1.3em;
+    background: #2d2f46;
+    padding: 20px 2%;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 96%;
+}
+input.go-forward {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    transform: scale(-1);
+    background: #4481a7;
+    padding: 10px 40px;
+    border-radius: 5px;
+    vertical-align: middle;
+}
+.next-end-question {
+    background: #52d6b2;
+    position: absolute;
+    top: 3%;
+    right: 2%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.next-end-question img {
+    transform: scaleX(-1);
+    width: 30px;
+    vertical-align: middle;
+}
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+@keyframes slideOutLeft {
+    to {
+        transform: translateX(-100%);
+    }
+}
+.ng-enter {
+    animation: slideInRight 0.5s both ease-in;
+}
+.ng-leave {
+    animation: slideOutLeft 0.5s both ease-in;
+}

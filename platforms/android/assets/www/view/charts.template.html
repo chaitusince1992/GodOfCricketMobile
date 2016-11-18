@@ -1,11 +1,10 @@
 <div class="every-page-container god-of-cricket-app-container" ng-init="init()">
     <div class="application-header">
         <img class="backbutton-icon" src="img/backbutton.png" ng-click="goBack()" />
-        <div class="page-heading">Overview</div>
+        <div class="page-heading">{{pageName}}</div>
     </div>
     <div class="application-detail">
-<!--        <hc-chart options="chartOptions"></hc-chart>-->
-<!--        <hc-pie-chart title="Browser usage" data="columnData" drilldown="drillData">Placeholder for pie chart</hc-pie-chart>-->
+        <input type="image" id="go-to-next-chart" class="go-forward" src="img/backbutton.png" ng-click="submitButtonNextPage()">
         <div id="container"></div>
     </div>
 </div>

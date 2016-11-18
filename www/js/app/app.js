@@ -1,4 +1,4 @@
-var godOfCricketApp = angular.module('godOfCricket', ['ngRoute', 'ngAnimate', 'highcharts-ng']);
+var godOfCricketApp = angular.module('godOfCricket', ['ngRoute']);
 
 godOfCricketApp.config(['$routeProvider', function($routeProvider) {
     $routeProvider
@@ -18,47 +18,3 @@ godOfCricketApp.config(['$routeProvider', function($routeProvider) {
             url: '/home'
         })
 }]);
-
-godOfCricketApp.directive('hcChart', function() {
-    return {
-        restrict: 'E',
-        template: '<div></div>',
-        scope: {
-            options: '='
-        },
-        link: function(scope, element) {
-            Highcharts.chart(element[0], scope.options);
-        }
-    };
-});
-godOfCricketApp.directive('hcPieChart', function() {
-    return {
-        restrict: 'EA',
-        template: '<div></div>',
-        scope: {
-            title: '@',
-            data: '=',
-            drilldown: '='
-        },
-        link: function(scope, element) {
-            Highcharts.chart(element[0], {
-                chart: {
-                    type: 'column'
-                },
-                title: {
-                    text: scope.title
-                },
-                series: scope.data,
-                drilldown: scope.drilldown,
-            activeAxisLabelStyle: {
-                textDecoration: 'none',
-                fontStyle: 'italic'
-            },
-            activeDataLabelStyle: {
-                textDecoration: 'none',
-                fontStyle: 'italic'
-            },
-            });
-        }
-    };
-})

@@ -17,7 +17,19 @@ godOfCricketApp.controller('summaryController', ['$scope', '$rootScope', '$locat
         };
         $scope.clickedOnTotalScores = function() {
             console.log("clicked on total scores");
-            $location.path("/charts/line");
+            $location.path("/charts/score");
+        };
+        $scope.clickedOnAverageScores = function() {
+            console.log("clicked on total scores");
+            $location.path("/charts/average");
+        };
+        $scope.clickedOnCenturies = function() {
+            console.log("clicked on total scores");
+            $location.path("/charts/centuries");
+        };
+        $scope.clickedOnHalfCenturies = function() {
+            console.log("clicked on total scores");
+            $location.path("/charts/halfcenturies");
         };
     }
 ]);

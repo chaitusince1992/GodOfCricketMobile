@@ -112,7 +112,7 @@ godOfCricketApp.service('commonServices', ['$q', '$http', function ($q, $http) {
                 enabled: false
             },
             series: seriesData,
-            drilldown: drillDownData
+//            drilldown: drillDownData
         });
     }
 }]);

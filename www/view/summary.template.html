@@ -5,20 +5,20 @@
     </div>
     <div class="application-detail">
         <div class="detail-container" ng-click="clickedOnTotalScores()">
-            <div class="detail-label">Total Score: </div>
+            <div class="detail-label">Total Runs: </div>
             <div class="detail-information">{{totalScore}}</div>
         </div>
-        <div class="detail-container">
+        <div class="detail-container" ng-click="clickedOnAverageScores()">
             <div class="detail-label">Batting Average: </div>
             <div class="detail-information">{{battingAverage}}</div>
         </div>
-        <div class="detail-container">
-            <div class="detail-label">Half Centuries: </div>
-            <div class="detail-information">{{halfCenturies}}</div>
-        </div>
-        <div class="detail-container">
+        <div class="detail-container" ng-click="clickedOnCenturies()">
             <div class="detail-label">Centuries: </div>
             <div class="detail-information">{{centuries}}</div>
-        </div>        
+        </div>    
+        <div class="detail-container" ng-click="clickedOnHalfCenturies()">
+            <div class="detail-label">Half Centuries: </div>
+            <div class="detail-information">{{halfCenturies}}</div>
+        </div>    
     </div>
 </div>

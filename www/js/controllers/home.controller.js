@@ -5,7 +5,7 @@ godOfCricketApp.controller('homeController', ['$scope', '$rootScope', '$location
         };
         $scope.submitButtonNextPage = function() {
             console.log("go to next page");
-//            $location.path("questions/1");            
+            $location.path("summary");            
         };
     }
 ]);

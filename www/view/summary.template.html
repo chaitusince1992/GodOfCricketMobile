@@ -1,0 +1,24 @@
+<div class="every-page-container god-of-cricket-app-container" ng-init="init()">
+    <div class="application-header">
+        <img class="backbutton-icon" src="img/backbutton.png" ng-click="goBack()" />
+        <div class="page-heading">Overview</div>
+    </div>
+    <div class="application-detail">
+        <div class="detail-container" ng-click="clickedOnTotalScores()">
+            <div class="detail-label">Total Score: </div>
+            <div class="detail-information">{{totalScore}}</div>
+        </div>
+        <div class="detail-container">
+            <div class="detail-label">Batting Average: </div>
+            <div class="detail-information">{{battingAverage}}</div>
+        </div>
+        <div class="detail-container">
+            <div class="detail-label">Half Centuries: </div>
+            <div class="detail-information">{{halfCenturies}}</div>
+        </div>
+        <div class="detail-container">
+            <div class="detail-label">Centuries: </div>
+            <div class="detail-information">{{centuries}}</div>
+        </div>        
+    </div>
+</div>

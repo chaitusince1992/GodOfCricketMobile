@@ -4,8 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width, minimum-scale=1">
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
     <!-- ***** Normal style sheet ****-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>God Of Cricket - Sachin</title>
@@ -20,9 +18,19 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/highcharts/5.0.2/highcharts.js"></script>
+    <script type="text/javascript" src="js/lib/highcharts.js"></script>
+    <script type="text/javascript" src="js/lib/drilldown.js"></script>
+    <script type="text/javascript" src="js/lib/highcharts-ng.js"></script>
 
 
+    <script>
+        $("body").css("width", $(window).width());
+        $("body").css("height", $(window).height());
+        $(window).resize(function() {
+            $("body").css("width", $(window).width());
+            $("body").css("height", $(window).height());
+        });
+    </script>
 
     <!--internal Files-->
     <!-- ****************   configuration files  ******************* -->
@@ -34,15 +42,8 @@
 
     <!-- *******************   controllers  ************************** -->
     <script type="text/javascript" src="js/controllers/home.controller.js"></script>
-    <script>
-        $("body").css("width", $(window).width());
-        $("body").css("height", $(window).height());
-        $(window).resize(function() {
-            $("body").css("width", $(window).width());
-            $("body").css("height", $(window).height());
-        });
-
-    </script>
+    <script type="text/javascript" src="js/controllers/summary.controller.js"></script>
+    <script type="text/javascript" src="js/controllers/charts.controller.js"></script>
 </body>
 
 </html>
